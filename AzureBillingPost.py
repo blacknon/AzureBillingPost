@@ -187,7 +187,7 @@ TOTAL_SUM = SumUsagefee(USAGE_DATA)
 
 # ==== SlackへPostする ====
 SLACK_TEXT='今月の、昨日までのAzureの利用料金は￥' + "{:,d}".format(TOTAL_SUM) + 'になります。\n ' + \
-           '※ MSスポンサープランのため、無料チケット分は請求されていません。また、日本円計算のため実際の請求(ドル計算)とは差異が発生します。'
+           '※ 日本円計算のため実際の請求(ドル計算)とは差異が発生します。'
 
 slack=slackweb.Slack(url=SLACK_WEBHOOK)
 attachments=[]
