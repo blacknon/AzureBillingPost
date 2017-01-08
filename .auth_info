@@ -1,0 +1,9 @@
+[Azure]
+AZURE_API_VER = 2015-06-01-preview
+AZURE_TENANT_ID = 
+AZURE_CLIENT_ID = 
+AZURE_CLIENT_PW = 
+
+[slack]
+WEBHOOK_URL = https://hooks.slack.com/services/XXXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXX
+
