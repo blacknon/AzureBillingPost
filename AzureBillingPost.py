@@ -29,7 +29,11 @@ SLACK_USER='AzureBillingInfo'
 # 昨日の日付を取得する
 LAST_DAY = (datetime.date.today() -datetime.timedelta(1))
 END_DATE = LAST_DAY.strftime('%Y-%m-%d')
-START_DATE = (datetime.date(day=1, month=LAST_DAY.month, year=LAST_DAY.year)).strftime('%Y-%m-%d')
+
+# 計算開始日を先月末の日付とする
+TODAY = datetime.datetime.today()
+LASTMON = TODAY - datetime.timedelta(days=TODAY.day)
+START_DATE = LASTMON.strftime('%Y-%m-%d')
 
 
 # AzureAPI AuthToken取得
